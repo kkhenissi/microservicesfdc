@@ -16,8 +16,7 @@ public class ProductItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    private Long productId;
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) private Long productId;
     @Transient Product product;
     private double price;
     private double quantity;

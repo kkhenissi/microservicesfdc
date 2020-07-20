@@ -18,4 +18,7 @@ public class Customer {
     private Long Id;
     private String name;
     private String email;
+
+    public Customer(Object o, String khenissi, String s) {
+    }
 }

@@ -5,9 +5,10 @@ import com.fidecoin.customerservice.repository.projections.CustomerRepositiry;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
-
+@EnableDiscoveryClient
 @SpringBootApplication
 public class CustomerServiceApplication {
 

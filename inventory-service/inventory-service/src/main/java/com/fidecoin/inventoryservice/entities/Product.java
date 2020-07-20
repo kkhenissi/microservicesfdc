@@ -18,4 +18,8 @@ public class  Product{
 	private  Long id;
 	private String name;
 	private double price;
+
+
+	public Product(Object o, String bookAnalyser, int i) {
+	}
 }
