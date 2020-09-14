@@ -25,9 +25,9 @@ public class InventoryServiceApplication {
 	CommandLineRunner start(ProductRepository productRepository, RepositoryRestConfiguration repositoryRestConfiguration) {
 		return  args -> {
 			repositoryRestConfiguration.exposeIdsFor(Product.class);
-			productRepository.save(new Product(null, "bookAnalyser", 1230));
-			productRepository.save(new Product(null, "radiofrequency", 1230));
-			productRepository.save(new Product(null, "managerfutear", 1230));
+			productRepository.save(new Product(null, "nnn",522.555));
+			productRepository.save(new Product(null, "radiofrequency", 123.100));
+			productRepository.save(new Product(null, "managerfutear", 12.530));
 			productRepository.findAll().forEach(elmt -> {
 				System.out.println(elmt);
 			});

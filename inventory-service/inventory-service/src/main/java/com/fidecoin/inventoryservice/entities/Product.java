@@ -12,14 +12,12 @@ import javax.persistence.Id;
 
 @Entity
 @Data @NoArgsConstructor @AllArgsConstructor @ToString
-public class  Product{
+public
+class  Product{
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private  Long id;
 	private String name;
-	private double price;
+	private Double price;
 
-
-	public Product(Object o, String bookAnalyser, int i) {
-	}
 }
