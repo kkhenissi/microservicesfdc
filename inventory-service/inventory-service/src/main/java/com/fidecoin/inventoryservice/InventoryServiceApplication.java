@@ -30,6 +30,7 @@ public class InventoryServiceApplication {
 			productRepository.save(new Product(null, "managerfutear", 12.530));
 			productRepository.findAll().forEach(elmt -> {
 				System.out.println(elmt);
+				// test ci for inventory-service
 			});
 
 		};
