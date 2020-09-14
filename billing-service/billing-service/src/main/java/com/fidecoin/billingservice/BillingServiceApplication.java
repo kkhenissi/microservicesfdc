@@ -30,7 +30,7 @@ public class BillingServiceApplication {
 							CustomerService customerService,
 							InventoryService inventoryService) {
 
-		Customer c1 = customerService.findCustomerById(1l);
+		Customer c1 = customerService.findCustomerById(1L);
 
 
 
@@ -51,7 +51,7 @@ public class BillingServiceApplication {
 			System.out.println("************************************************");
 			allProducts.getContent().forEach(p-> {
 			productItemRepository.save(new ProductItem(null,p.getId(),null,p.getPrice(),34,bill1));
-
+          // comment for ci test
 			});
 		};
 
