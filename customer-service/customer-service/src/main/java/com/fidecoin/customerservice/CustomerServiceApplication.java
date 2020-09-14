@@ -25,6 +25,7 @@ public class CustomerServiceApplication {
 			customerRepositiry.save(new Customer(null, "lolouche","kkhenissi@gmail.com"));
 			customerRepositiry.findAll().forEach(elmt -> {
 				System.out.println(elmt);
+				// and comment for ci test 2
 			});
 		};
 	}
